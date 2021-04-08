@@ -1,9 +1,10 @@
 
 export default function Cell(props) {
     return (
+      <>
       <div
         key={props.number}
-        className="cell"
+        className="cell tooltip"
         data-category={props.category}
         style={{
           gridRowStart: props.ypos,
@@ -15,5 +16,6 @@ export default function Cell(props) {
         <span className="symbol">{props.symbol}</span>
         <span className="name">{props.name}</span>
       </div>
+      </>
     );
   }

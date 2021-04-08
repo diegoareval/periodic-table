@@ -5,6 +5,7 @@ import Cell from "./Cell";
 
 
 function PeriodicTable(props) {
+    
   const [state, setState] = useState(
     props.elements.reduce(
       (state, { category }) => Object.assign(state, { [category]: true }),
